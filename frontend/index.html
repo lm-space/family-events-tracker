@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events App</title>
+  <script>
+    // Redirect from old domain to new custom domain
+    if (window.location.hostname === 'dle-app.pages.dev') {
+      window.location.replace('https://events.twozao.com' + window.location.pathname + window.location.search);
+    }
+  </script>
+
+  <!-- TraqIt Analytics Tracker -->
+  <script async src="https://traqit.pages.dev/sdk.js" data-key="tq_5pds0E5R5BtYEco0cN8AclQcNFIdIw9N"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
